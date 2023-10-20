@@ -15,3 +15,42 @@ header {
   z-index: 10;
 }
 
+/* Hamburger Menu styling */
+#hamburger-menu {
+  background: none;
+  border: none;
+  font-size: 28px;
+  font-weight:900;
+  color: #15139c; 
+  cursor: pointer;
+  padding: 10px;
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  background-color: white;
+  padding: 10px;
+  overflow: auto;
+}
+
+nav li {
+  float: left;
+}
+
+.leftli {
+  float: right;
+  margin-left: 40px;
+  /* position: relative;
+  top: 12px; */
+}
+
+/* nav li a {
+  text-decoration: none;
+  color: blue;
+  display: inline-block;
+  text-align: center;
+} */
