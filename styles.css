@@ -103,6 +103,24 @@ nav li a#hamburger-menu {
   line-height: 20px;
 }
 
+.iconlist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.iconlist li {
+  display: block;
+  float: left;
+  padding: 0 5px;
+}
+
+.icons {
+  margin-right: 10px;
+  width: 17.99px;
+  height: 20px;
+}
+
 /* ======Desktop view======*/
 
 @media screen and (min-width: 768px) {
@@ -115,6 +133,10 @@ nav li a#hamburger-menu {
   }
 
   .mobile-menu {
+    display: none;
+  }
+
+  .headline-mobile {
     display: none;
   }
 
@@ -173,7 +195,7 @@ nav li a#hamburger-menu {
     line-height: 24px;
   }
 
-  .iconlist {
+  /* .iconlist {
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -189,9 +211,64 @@ nav li a#hamburger-menu {
     margin-right: 10px;
     width: 17.99px;
     height: 20px;
-  }
+  } */
 
 }
 
 /*======Mobile view======*/
 
+@media screen and (max-width: 767px) {
+
+  .link-desktop {
+    display: none;
+  }
+
+  .headline {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+  }
+
+  .headline-mobile {
+    display: block;
+    background-image: url('/images/image.png');
+    border-bottom-left-radius: 50px;
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+  }
+
+  .textdiv-mobile h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #172b4d;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .textdiv-mobile p {
+    font-family: 'Poppins', sans-serif;
+    color: #344563;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .pcol-mobile {
+    color: #7f8cff;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+}
