@@ -1,4 +1,5 @@
 /* eslint-disable */
+// projects array of objects
 const projects = [
     {
       name: 'Doctor Appointment App',
@@ -94,7 +95,9 @@ const desktopDiv = document.querySelector('#portfolio1');
 
 let count = 0;
 
+// Mapping through the Projects array and creating the DOM elements
 projects.forEach((project) => {
+  // Creating the DOM elements and appending them to the parent element
   const container = document.createElement('article');
   container.classList.add('work', classNames[count]);
   desktopDiv.appendChild(container);
@@ -113,7 +116,6 @@ projects.forEach((project) => {
   cardInfo.classList.add('tonicdesktop');
   container.appendChild(cardInfo);
 
-  cardInfo.innerHTML = `<h1 class="popheading popheaddesktop">${project.name}</h1><br>`;
-
-
+  cardInfo.innerHTML = `<h1 class="popheading popheaddesktop">${project.name}</h1><br>
+  <p>${project.description}</p>`;
 });
