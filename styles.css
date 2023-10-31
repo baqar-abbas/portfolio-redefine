@@ -211,8 +211,13 @@ nav li a#hamburger-menu {
   width: 85%;
   display: flex;
   flex-direction: row;
-  height: 470px;
+  height: 490px;
   background-color: white;
+  }
+
+  .work-two,
+  .work-four {
+    flex-direction: row-reverse;
   }
   
   .imgdiv {
@@ -238,7 +243,7 @@ nav li a#hamburger-menu {
   }
 
   .tonicdesktop {
-    flex: 40%;
+    flex: 50%;
     margin-left: 20px;
     margin-bottom: 20px;
     margin-right: 20px;
@@ -318,6 +323,63 @@ nav li a#hamburger-menu {
     font-size: 16px !important;
   }
 
+  .techlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .techlist li {
+    display: block;
+    float: left;
+    padding: 0 2px;
+    margin-right: 5px;
+  }
+
+  .htcj {
+    background: #ebebff;
+    border-radius: 8px;
+    /* display: inline-block; */
+    padding: 5px 14px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6070ff;
+  }
+
+  .btn {
+    clear: left;
+    margin-top: 20px;
+    padding: 20px 0;
+  }
+
+  .btnlink {
+    clear: left;
+    text-decoration: none;
+  color: #396df2;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px 12px;
+  }
+
+  .btnlink:hover {
+    background: #6070ff;
+  color: #fff;
+  }
+
+  .btnlink:active {
+    background: #2230d2;
+  color: #fff;
+  }
+
   /* .iconlist {
     list-style-type: none;
     padding: 0;
@@ -350,6 +412,10 @@ nav li a#hamburger-menu {
 
   #hamburger-menu {
     display: block;
+  }
+
+  #portfolio1 {
+    display: none;
   }
 
   .headline-mobile {

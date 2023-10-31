@@ -148,4 +148,29 @@ projects.forEach((project) => {
   // cardDescription.innerText = project.description;
   cardInfo.appendChild(cardDescription);
 
+  const techList = document.createElement('ul');
+  techList.classList.add('techlist');
+  cardInfo.appendChild(techList);
+
+  project.technologies.forEach((tech) => {
+    const techItem = document.createElement('li');
+    techItem.classList.add('htcj');
+    techItem.innerText = tech;
+    techList.appendChild(techItem);
+  })
+
+  const btnDiv = document.createElement('div');
+  btnDiv.classList.add('btn');
+  cardInfo.appendChild(btnDiv);
+
+  const seeProject = document.createElement('a');
+  seeProject.classList.add('btnlink');
+  seeProject.setAttribute('href', project.linkToLiveVersion);
+  seeProject.setAttribute('target', '_blank');
+  // seeProject.innerHTML = `<br>`;
+  seeProject.innerText = 'See Project';
+  btnDiv.appendChild(seeProject);
+
+  count += 1;
+
 });
