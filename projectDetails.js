@@ -116,6 +116,36 @@ projects.forEach((project) => {
   cardInfo.classList.add('tonicdesktop');
   container.appendChild(cardInfo);
 
-  cardInfo.innerHTML = `<h1 class="popheading popheaddesktop">${project.name}</h1><br>
-  <p>${project.description}</p>`;
+  cardInfo.innerHTML = `<h1 class="popheading popheaddesktop">${project.name}</h1>`;
+
+  // <p>${project.description}</p>
+  
+  const skillInfo = document.createElement('ul');
+  skillInfo.classList.add('skillinfo');
+  cardInfo.appendChild(skillInfo);
+
+  const skillNames = [
+    'skill-one',
+    'skill-two',
+    'skill-three',
+    'skill-four',
+    'skill-five',
+  ];
+
+  let skillCount = 0;
+
+  project.items.forEach((item) => {
+    const skill = document.createElement('li');
+    skill.classList.add(skillNames[skillCount]);
+    skill.innerHTML = item;
+    skillInfo.appendChild(skill);
+    skillCount += 1;
+  })
+
+  const cardDescription = document.createElement('p');
+  cardDescription.classList.add('popp15', 'popp15desktop');
+  cardDescription.innerHTML = `<br>${project.description}<br><br>`
+  // cardDescription.innerText = project.description;
+  cardInfo.appendChild(cardDescription);
+
 });

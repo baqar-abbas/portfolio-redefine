@@ -237,6 +237,87 @@ nav li a#hamburger-menu {
     transform: scale(1.1, 1.1);
   }
 
+  .tonicdesktop {
+    flex: 40%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .popheading {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    /* font-size: 32px;
+    line-height: 44px; */
+    color: #172b4d;
+  }
+
+  .popheaddesktop {
+    font-weight: 700;
+    font-size: 40px !important;
+    line-height: 44px;
+    color: #091e42 !important;
+  }
+
+  .skillinfo {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px !important;
+  }
+
+  .skillinfo li {
+    float: left;
+  }
+
+  .skill-one,
+  .skill-three,
+  .skill-five {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  /* font-weight: 600; */
+  /* font-size: 13px; */
+  /* line-height: 16px; */
+  color: #344563;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  }
+
+  .skill-two,
+  .skill-four {
+  width: 9px;
+  height: 9px;
+  margin: 0 6px;
+  }
+
+  .skill-three,
+  .skill-five {
+    color: #7a869a;
+  }
+
+  .popp15 {
+    clear: left;
+    margin-top: 20px !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    /* font-size: 15px; */
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .pop15desktop {
+    font-size: 16px !important;
+  }
+
   /* .iconlist {
     list-style-type: none;
     padding: 0;
