@@ -116,7 +116,7 @@ projects.forEach((project) => {
   cardInfo.classList.add('tonicdesktop');
   container.appendChild(cardInfo);
 
-  cardInfo.innerHTML = `<h1 class="popheading popheaddesktop">${project.name}</h1>`;
+  cardInfo.innerHTML = `<h2 class="popheading popheaddesktop">${project.name}</h2>`;
 
   // <p>${project.description}</p>
   

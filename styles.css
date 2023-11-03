@@ -464,6 +464,7 @@ nav li a#hamburger-menu {
   .mobile-menu {
   /* min-height: 718px; */
   height: 100vh;
+  width: 0;
   /* width: 100vw; */
   display: flex;
   flex-direction: row-reverse;
@@ -523,6 +524,12 @@ nav li a#hamburger-menu {
   margin-top: 20px;
   }
 
+  .tonic {
+    flex: 100%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
   .projects {
     width: 295px;
     height: 220px;
@@ -531,5 +538,64 @@ nav li a#hamburger-menu {
   
   .projects:hover {
     transform: scale(1.1, 1.1);
+  }
+
+  .project-name {
+    font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  }
+
+  .skill-list {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .skill-list li {
+    float: left;
+  }
+
+  .skillm-one,
+  .skillm-three,
+  .skillm-five {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: #344563;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  }
+
+  .skillm-two,
+  .skillm-four {
+  width: 9px;
+  height: 9px;
+  margin: 0 6px;
+  }
+
+  .skillm-three,
+  .skillm-five {
+    color: #7a869a;
+  }
+
+  .project-description {
+    clear: left;
+    margin-top: 20px !important;
+    font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
   }
 }

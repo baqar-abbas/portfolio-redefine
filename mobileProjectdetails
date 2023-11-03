@@ -2,7 +2,7 @@
 // projects array of objects
 const projectsMob = [
     {
-      name: 'Doctor Appointment App',
+      name: 'Appointment App',
       description:
         'Doctor Appointment app is a Full Stack Web application built using Ruby-on-Rails along with React and Redux for the front end. It allows users to signup and register themselves and sign-in using the credentials. It allows users to book an appointment with the doctor. Users can see their appointments in the my appointments page. This app also allows admins to add doctors and delete doctors. This app handles responsiveness for both the mobile and desktop users.',
       featuredImage: '/images/appointAppMob.jpg',
@@ -113,8 +113,37 @@ projectsMob.forEach((project) => {
     projectInfo.classList.add('tonic');
     container.appendChild(projectInfo);
 
-    const name = document.createElement('h2');
+    const name = document.createElement('h3');
     name.classList.add('project-name');
     name.textContent = project.name;
     projectInfo.appendChild(name);
+
+    const skillmInfo = document.createElement('ul');
+    skillmInfo.classList.add('skill-list');
+    projectInfo.appendChild(skillmInfo);
+
+    const skillmNames = [
+      'skillm-one',
+      'skillm-two',
+      'skillm-three',
+      'skillm-four',
+      'skillm-five',
+    ];
+
+    let skillmCount = 0;
+
+    project.items.forEach((item) => {
+      const skillm = document.createElement('li');
+      skillm.classList.add(skillmNames[skillmCount]);
+      skillm.innerHTML = item;
+      skillmInfo.appendChild(skillm);
+      skillmCount += 1;
+    })
+
+    const description = document.createElement('p');
+    description.classList.add('project-description');
+    description.innerHTML = `<br>${project.description}<br><br>`;
+    projectInfo.appendChild(description);
+
+    
 });
