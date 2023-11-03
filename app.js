@@ -7,13 +7,15 @@ const hamMenu = document.querySelector("#hamburger-menu");
 
 const menuOpen = (event) => {
     navMenu.style.display = "none";
-    mobileMenu.style.display = "flex";
+    // mobileMenu.style.display = "flex";
+    mobileMenu.style.width = "100vw";
     event.preventDefault();
 }
 
 const menuClose = () => {
     navMenu.style.display = "block";
-    mobileMenu.style.display = "none";
+    // mobileMenu.style.display = "none";
+    mobileMenu.style.width = "0";
 }
 
 hamMenu.addEventListener("click", menuOpen);
