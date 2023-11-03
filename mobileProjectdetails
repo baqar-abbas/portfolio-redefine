@@ -145,5 +145,26 @@ projectsMob.forEach((project) => {
     description.innerHTML = `<br>${project.description}<br><br>`;
     projectInfo.appendChild(description);
 
-    
+    const tech = document.createElement('ul');
+    tech.classList.add('tech-mob-list');
+    projectInfo.appendChild(tech);
+
+    project.technologies.forEach((techno) => {
+      const techItem = document.createElement('li');
+      techItem.classList.add('htcj2');
+      techItem.innerText = techno;
+      tech.appendChild(techItem);
+    })
+
+    const btnDivMob = document.createElement('div');
+    btnDivMob.classList.add('btn-div-mob');
+    projectInfo.appendChild(btnDivMob);
+
+    const liveVersion = document.createElement('a');
+    liveVersion.classList.add('live-version');
+    liveVersion.href = project.linkToLiveVersion;
+    liveVersion.target = '_blank';
+    liveVersion.textContent = 'See Project';
+    btnDivMob.appendChild(liveVersion);
+
 });
