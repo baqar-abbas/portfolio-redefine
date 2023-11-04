@@ -147,6 +147,10 @@ nav li a#hamburger-menu {
     display: none;
   }
 
+  .about-mobile {
+    display: none;
+  }
+
   .headline {
     display: flex;
     flex-wrap: wrap;
@@ -563,6 +567,9 @@ nav li a#hamburger-menu {
     margin-right: 10px;
   }
 
+  .spacing {
+    margin-right: 15px;
+  }
   /* .iconlist {
     list-style-type: none;
     padding: 0;
@@ -845,5 +852,240 @@ nav li a#hamburger-menu {
   .live-version:hover {
     background: #6070ff;
   color: white;
+  }
+
+  .live-version:active {
+    background: #2230d2;
+  }
+
+  .about-mobile {
+    display: grid;
+    grid-template-columns: auto;
+    background-image: url('/images/aboutMobile.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-top-right-radius: 50px;
+    padding: 0 15px;
+    margin-top: 40px;
+    height: auto;
+  }
+
+  .abouth-mobile {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .about-para {
+    margin-top: 20px !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .abouts-mob {
+    /* clear: left; */
+    text-decoration: none;
+    color: #396df2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    border: 1px solid #396df2;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 12px;
+    margin-top: 12px;
+  }
+  
+  .abouts-mob:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+  
+  .abouts-mob:active {
+    background: #2230d2;
+    color: #fff;
+  }
+  
+  .skill-section {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+  }
+
+  .abouth-mob {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    color: #172b4d;
+    margin-left: 16px;
+  }
+
+  .skill-tools-mob {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aboutp-mob {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 0 16px;
+    /* color: #000; */
+    color: #344563
+  }
+
+  .front-end-skills-mob {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 8px;
+    padding-left: 6px;
+  }
+
+  .imageabout-mob {
+    width: 50px;
+    height: 50px;
+  }
+
+  .title-text-mob {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
+  }
+
+  .html-mob {
+    width: 25%;
+  }
+
+  .css-mob {
+    width: 25%;
+  }
+
+  .css-title-mob {
+    margin-left: 8px;
+  }
+
+  .js-mob {
+    width: 25%;
+  }
+
+  .react-mob {
+    width: 25%;
+  }
+
+  .react-title-mob {
+    margin-left: 15px;
+  }
+
+  .redux-mob {
+    width: 25%;
+  }
+
+  .saas-mob {
+    width: 25%;
+  }
+
+  .bootstrap-mob {
+    width: 25%;
+  }
+
+  .tailwind-mob {
+    width: 25%;
+  }
+  
+  .tailwind-title-mob {
+    margin-left: 8px;
+  }
+
+  .back-end-skills-mob {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    margin-left: 8px;
+    padding-left: 6px;
+  }
+
+  .ruby-mob {
+    width: 30%;
+  }
+
+  .ror-mob {
+    width: 35%;
+  }
+
+  .postgre-mob {
+    width: 35%;
+  }
+
+  .postgre-title-mob {
+    margin-left: 8px;
+  }
+
+  .tools-mob {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 8px;
+    padding-left: 6px;
+  }
+
+  .git-mob {
+    width: 30%;
+  }
+
+  .git-title-mob {
+    margin-left: 10px;
+  }
+
+  .github-mob {
+    width: 35%;
+  }
+
+  .vscode-mob {
+    width: 35%;
+  }
+
+  .jest-mob {
+    width: 30%;
+  }
+
+  .jest-title-mob {
+    margin-left: 8px;
+  }
+
+  .rspec-mob {
+    width: 35%;
+  }
+
+  .devtools-mob {
+    width: 35%;
+  }
+
+  .others-mob {
+    margin-left: 8px;
+    padding-left: 6px;
+    line-height: 40px;
+  }
+
+  .spacing-mob {
+    margin-right: 10px;
   }
 }
