@@ -29,6 +29,7 @@ header {
   left: 10px;
 }
 
+/* Nav menu styling for the desktop version */
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -382,6 +383,184 @@ nav li a#hamburger-menu {
   .btnlink:active {
     background: #2230d2;
   color: #fff;
+  }
+
+  .about-desktop {
+    display: grid;
+    background-image: url('/images/aboutDesktop.png') !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    grid-template-columns: 50% 50% !important;
+    border-top-right-radius: 50px !important;
+    padding: 40px;
+    margin-top: 100px;
+    height: auto;
+  }
+
+  .about {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 75%;
+    height: auto;
+    position: relative;
+    left: 20px;
+  }
+
+  .abouts {
+    text-decoration: none;
+    color: #396df2;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    border: 1px solid #396df2;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 10px 12px;
+  }
+  
+  .abouts:hover {
+    background: #6070ff;
+    color: #fff;
+  }
+  
+  .abouts:active {
+    background: #2230d2;
+    color: #fff;
+  }
+  
+
+  .abouth {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+  }
+
+  .lastsection {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+  }
+
+  .skill-tools {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .aboutp {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* color: #000; */
+    color: #344563
+  }
+
+  .front-end-skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title-text {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #253858;
+  }
+
+  .css {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .css-title {
+    margin-left: 8px;
+  }
+
+  .js {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .react-title {
+    margin-left: 8px;
+  }
+
+  .redux {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .saas-title {
+    margin-left: 8px;
+  }
+
+  .bootstrap {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .tailwind {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .imageabout {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .back-end-skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ruby-title {
+    margin-left: 8px;
+  }
+
+  .ror {
+    margin-left: 35px;
+  }
+
+  .postgre {
+    margin-left: 20px;
+  }
+
+  .tools {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .git-title {
+    margin-left: 10px;
+  }
+
+  .github {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .vscode {
+    margin-right: 10px;
+  }
+
+  .jest-title {
+    margin-left: 10px;
+  }
+
+  .rspec {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   /* .iconlist {
