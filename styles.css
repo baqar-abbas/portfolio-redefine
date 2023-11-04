@@ -601,6 +601,10 @@ nav li a#hamburger-menu {
     display: none;
   }
 
+  .about-desktop {
+    display: none;
+  }
+
   .headline-mobile {
     display: block;
     background-image: url('/images/image.png');
