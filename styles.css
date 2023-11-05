@@ -21,7 +21,8 @@ header {
   border: none;
   font-size: 28px;
   font-weight: 900;
-  color: #15139c;
+  /* color: #15139c; */
+  color: #6070ff;
   cursor: pointer;
   padding: 10px;
   position: absolute;
