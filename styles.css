@@ -673,6 +673,134 @@ nav li a#hamburger-menu {
     border: 2px solid transparent;
     overflow: hidden;
   }
+
+  .popupbackground {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    background-color: #396df277;
+    backdrop-filter: blur(5px);
+  }
+
+  #demonstration-desktop {
+    /* width: 79%;*/
+    /* height: 90vh;  */
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top-left-radius: 40px;
+    /* border-top-right-radius: 40px; */
+    border-bottom-left-radius: 40px;
+    /* border-bottom-right-radius: 40px; */
+    top: 1%;
+    z-index: 20;
+    /* display: none; */
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+    margin-left: 100px;
+    border: 1px solid #ebecf0;
+    margin-top: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: width 0.8s;
+  }
+
+  .crossmodal {
+    float: right;
+    line-height: 52px;
+    cursor: pointer;
+    width: 50px;
+    height: 45px;
+  }
+
+  .modalheading {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+    /* display: inline-block; */
+    /* float: left; */
+    width: 90%;
+  }
+
+  .projectimage {
+    margin-top: 15px;
+    width : 100%;
+    height: 350px;;
+  }
+
+  .descriptiondiv {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .descriptionheading {
+    width: 75%;
+  }
+
+  .paragrap {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+    /* display: inline-block; */
+    width: 75%;
+    /* float: left; */
+  }
+
+  .techDiv {
+    width: 25%;
+  }
+
+  .techloopdiv {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  .btnPopup {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+  }
+
+  .seeLiveBtn {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btnMargin {
+    margin-left: 5px;
+  }
+
+  .gitbuttonicon1 {
+    width: 15px;
+    height: 15px;
+    margin-left: 3px;
+  }
+
+  .seeliveicon1 {
+    width: 14px;
+    height: 14px;
+    margin-left: 5px;
+  }
+
+  .no-scroll {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+
   /* .iconlist {
     list-style-type: none;
     padding: 0;

@@ -165,12 +165,146 @@ projects.forEach((project) => {
 
   const seeProject = document.createElement('a');
   seeProject.classList.add('btnlink');
-  seeProject.setAttribute('href', project.linkToLiveVersion);
-  seeProject.setAttribute('target', '_blank');
+  // seeProject.setAttribute('href', project.linkToLiveVersion);
+  seeProject.href = "javascript:void(0)";
+  // seeProject.setAttribute('target', '_blank');
   // seeProject.innerHTML = `<br>`;
   seeProject.innerText = 'See Project';
   btnDiv.appendChild(seeProject);
 
   count += 1;
 
+});
+
+const popupBackdroundDesktop = document.querySelector('.popupbackground');
+const demonstrationDiv = document.getElementById('demonstration-desktop');
+const seeProjectBtn = document.querySelectorAll('.btnlink');
+const closeModal = document.querySelector('.crossmodal');
+let scrollPosition = 0;
+
+seeProjectBtn.forEach((btn,index) => {
+console.log(index);
+btn.addEventListener('click', (event) => {
+popupBackdroundDesktop.style.display = 'block';
+
+scrollPosition = window.scrollY;
+document.body.classList.add('no-scroll');
+document.body.style.top = -scrollPosition + 'px';
+// demonstrationDiv.style.display = 'block';
+demonstrationDiv.style.width = '79%';
+demonstrationDiv.style.height = '90vh';
+
+const popupDiv = document.createElement('div');
+popupDiv.classList.add('popdiv');
+demonstrationDiv.appendChild(popupDiv);
+
+const heading = document.createElement('h2');
+heading.classList.add('modalheading');
+heading.innerText = projects[index].name;
+popupDiv.appendChild(heading);
+
+const skillInfo = document.createElement('ul');
+  skillInfo.classList.add('skillinfo');
+  popupDiv.appendChild(skillInfo);
+
+  const skillNames = [
+    'skill-one',
+    'skill-two',
+    'skill-three',
+    'skill-four',
+    'skill-five',
+  ];
+
+  let skillCount = 0;
+
+  projects[index].items.forEach((item) => {
+    const skill = document.createElement('li');
+    skill.classList.add(skillNames[skillCount]);
+    skill.innerHTML = item;
+    skillInfo.appendChild(skill);
+    skillCount += 1;
+  })
+
+  const projectImage = document.createElement('img');
+  projectImage.setAttribute('src', projects[index].featuredImage);
+  projectImage.setAttribute('alt', projects[index].name);
+  projectImage.classList.add('projectimage');
+  popupDiv.appendChild(projectImage);
+
+  const descriptionDiv = document.createElement('div');
+  descriptionDiv.classList.add('descriptiondiv');
+  popupDiv.appendChild(descriptionDiv);
+
+  const descriptionHeading = document.createElement('div');
+  descriptionHeading.classList.add('descriptionheading');
+  descriptionHeading.innerHTML = `<p class="paragrap">${projects[index].description}</p>`;
+  descriptionDiv.appendChild(descriptionHeading);
+
+  const techDiv = document.createElement('div');
+  techDiv.classList.add('techdiv');
+  descriptionDiv.appendChild(techDiv);
+
+
+  const techLoopDiv = document.createElement('div');
+  techLoopDiv.classList.add('techloopdiv');
+  techDiv.appendChild(techLoopDiv);
+
+  const techList = document.createElement('ul');
+  techList.classList.add('techlist');
+  techLoopDiv.appendChild(techList);
+
+  projects[index].technologies.forEach((tech) => {
+    const techItem = document.createElement('li');
+    techItem.classList.add('htcj');
+    techItem.innerText = tech;
+    techList.appendChild(techItem);
+  });
+
+  const btnDiv = document.createElement('div');
+  btnDiv.classList.add('btnPopup');
+  techDiv.appendChild(btnDiv);
+
+  const seeProject = document.createElement('a');
+  seeProject.classList.add('btnlink','seeLiveBtn');
+  seeProject.setAttribute('href', projects[index].linkToLiveVersion);
+  seeProject.setAttribute('target', '_blank');
+  // seeProject.innerText = 'See Live';
+  seeProject.appendChild(document.createTextNode(' See Live'));
+  const seeLiveLogo = document.createElement('img');
+seeLiveLogo.classList.add('seeliveicon1');
+seeLiveLogo.src = 'https://res.cloudinary.com/dapnjt4ah/image/upload/v1678270657/seeliveIcon_ymjy37.png'; // Replace with the actual path or URL to the GitHub logo
+seeLiveLogo.alt = 'SeeLive';
+seeProject.appendChild(seeLiveLogo);
+  btnDiv.appendChild(seeProject);
+
+  const seeSource = document.createElement('a');
+  seeSource.classList.add('btnlink', 'btnMargin');
+  seeSource.setAttribute('href', projects[index].linkToSource);
+  seeSource.setAttribute('target', '_blank');
+  seeSource.appendChild(document.createTextNode(' See Source'));
+const githubLogo = document.createElement('img');
+githubLogo.classList.add('gitbuttonicon1');
+githubLogo.src = '/images/gitbutton.png';
+githubLogo.alt = 'GitHub';
+seeSource.appendChild(githubLogo);
+// seeSource.appendChild(document.createTextNode(' See Source'));
+btnDiv.appendChild(seeSource);
+
+event.preventDefault();
+})
+});
+
+closeModal.addEventListener('click', (e) => {
+  console.log('Close button clicked');
+  const popupDiv = document.querySelector('.popdiv');
+  document.body.classList.remove('no-scroll');
+  document.body.style.top = '0';
+  window.scrollTo(0, scrollPosition);
+  popupDiv.remove();
+  demonstrationDiv.style.width = '0';
+  demonstrationDiv.style.height = '0';
+  popupBackdroundDesktop.style.display = 'none';
+  document.body.classList.remove('no-scroll');
+  // demonstrationDiv.style.display = 'none';
+  e.preventDefault();
 });
