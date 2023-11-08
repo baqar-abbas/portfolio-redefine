@@ -1,4 +1,3 @@
-/* eslint-disable */
 const key = 'cdata';
 
 const fullname = document.getElementById('fullname');

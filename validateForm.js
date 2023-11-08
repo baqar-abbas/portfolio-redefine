@@ -1,4 +1,4 @@
-/* eslint-disable */
+// Validate form logic for the contact form
 const form = document.querySelector('.form1');
 const email = document.querySelector('#email');
 const popUp = document.querySelector('.popuppara');
