@@ -4,7 +4,7 @@ const projects = [
     name: 'Doctor Appointment App',
     description:
         'Doctor Appointment app is a Full Stack Web application built using Ruby-on-Rails along with React and Redux for the front end. It allows users to signup and register themselves and sign-in using the credentials. It allows users to book an appointment with the doctor. Users can see their appointments in the my appointments page. This app also allows admins to add doctors and delete doctors. This app handles responsiveness for both the mobile and desktop users.',
-    featuredImage: '/images/appointApp.jpg',
+    featuredImage: './images/appointApp.JPG',
     technologies: ['RubyonRails', 'PostgreSQL', 'React', 'Redux', 'CSS', 'BootStrap'],
     linkToLiveVersion: 'https://doctor-app-u5x6.onrender.com/',
     linkToSource: 'https://github.com/baqar-abbas/appointment-app-back-end',
