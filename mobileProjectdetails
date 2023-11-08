@@ -97,7 +97,7 @@ projectsMob.forEach((project) => {
 
     const container = document.createElement('article');
     container.classList.add('work-container');
-    mobileDiv.appendChild(container);
+    mobileDiv?.appendChild(container);
 
     const imageContainer = document.createElement('div');
     imageContainer.classList.add('img-div-mob');
@@ -162,9 +162,128 @@ projectsMob.forEach((project) => {
 
     const liveVersion = document.createElement('a');
     liveVersion.classList.add('live-version');
-    liveVersion.href = project.linkToLiveVersion;
+    // liveVersion.href = project.linkToLiveVersion;
+    liveVersion.href = '';
     liveVersion.target = '_blank';
     liveVersion.textContent = 'See Project';
     btnDivMob.appendChild(liveVersion);
 
 });
+
+const popupBackgroundMobile = document.querySelector('.popupbackgroundmobile');
+const demonstrationMobile = document.querySelector('#demonstration-mobile');
+const seeProjectMobile = document.querySelectorAll('.live-version');
+const closePopupMobile = document.querySelector('.crossmodal-mobile');
+let scrollPosition2 = 0;
+
+seeProjectMobile.forEach((btn, index) => {
+  btn.addEventListener('click', (e) => {
+    popupBackgroundMobile.style.display = 'block';
+    // demonstrationMobile.style.display = 'block';
+    // console.log(index);
+    scrollPosition2 = window.scrollY;
+    document.body.classList.add('no-scroll-mob');
+    document.body.style.top = `${-scrollPosition2}px`;
+    demonstrationMobile.style.width = '93%';
+    demonstrationMobile.style.height = '90vh';
+    const popupMobileDiv = document.createElement('div');
+    popupMobileDiv?.classList.add('popup-mobile-div');
+    demonstrationMobile?.appendChild(popupMobileDiv);
+
+    const projectHeading = document.createElement('h2');
+    projectHeading.classList.add('project-heading');
+    projectHeading.textContent = projectsMob[index].name;
+    popupMobileDiv?.appendChild(projectHeading);
+
+    const skillmInfo = document.createElement('ul');
+    skillmInfo.classList.add('skill-list');
+    popupMobileDiv.appendChild(skillmInfo);
+
+    const skillmNames = [
+      'skillm-one',
+      'skillm-two',
+      'skillm-three',
+      'skillm-four',
+      'skillm-five',
+    ];
+
+    let skillmCount = 0;
+
+    projectsMob[index].items.forEach((item) => {
+    const skillItem = document.createElement('li');
+    skillItem.classList.add(skillmNames[skillmCount]);
+    skillItem.innerHTML = item;
+    skillmInfo.appendChild(skillItem)
+    skillmCount += 1;
+    });
+
+    const mobileProjectImage = document.createElement('img');
+    mobileProjectImage.setAttribute('src', projectsMob[index].featuredImage);
+    mobileProjectImage.setAttribute('alt', projectsMob[index].name);
+    mobileProjectImage.classList.add('projectmobimage');
+    popupMobileDiv.appendChild(mobileProjectImage);
+
+    const mobileProjectDetails = document.createElement('p');
+    mobileProjectDetails.classList.add('popp15');
+    mobileProjectDetails.innerHTML = projectsMob[index].description;
+    popupMobileDiv.appendChild(mobileProjectDetails);
+
+    const techMobDiv = document.createElement('div');
+    techMobDiv.classList.add('techMobDiv');
+    popupMobileDiv.appendChild(techMobDiv);
+
+    const tech = document.createElement('ul');
+    tech.classList.add('tech-mob-list');
+    techMobDiv.appendChild(tech);
+
+    projectsMob[index].technologies.forEach((techno) => {
+      const techItem = document.createElement('li');
+      techItem.classList.add('htcj2','techMargin');
+      techItem.innerText = techno;
+      tech.appendChild(techItem);
+    })
+
+    const mobileBtnDiv = document.createElement('div')
+    mobileBtnDiv.classList.add('mobileBtnDiv')
+    popupMobileDiv.appendChild(mobileBtnDiv);
+
+    const seeProject = document.createElement('a');
+    seeProject.classList.add('live-version','seePro-margin');
+    seeProject.setAttribute('href',projectsMob[index].linkToLiveVersion);
+    seeProject.setAttribute('target','_blank');
+    seeProject.appendChild(document.createTextNode(' See Live'));
+    const seeLiveLogo = document.createElement('img');
+    seeLiveLogo.classList.add('seeliveicon2');
+    seeLiveLogo.src = 'https://res.cloudinary.com/dapnjt4ah/image/upload/v1678270657/seeliveIcon_ymjy37.png'; // Replace with the actual path or URL to the GitHub logo
+    seeLiveLogo.alt = 'SeeLive';
+    seeProject.appendChild(seeLiveLogo);
+    mobileBtnDiv.appendChild(seeProject);
+
+    const seeSource = document.createElement('a');
+    seeSource.classList.add('live-version','margin-class');
+    seeSource.setAttribute('href', projectsMob[index].linkToSource);
+    seeSource.setAttribute('target','_blank');
+    seeSource.appendChild(document.createTextNode('See Source'));
+    const githubLogo = document.createElement('img');
+    githubLogo.classList.add('gitbuttonicon2');
+    githubLogo.src = '/images/gitbutton.png';
+    githubLogo.alt = 'GitHub';
+    seeSource.appendChild(githubLogo);
+    mobileBtnDiv.appendChild(seeSource);
+
+    e.preventDefault();
+  })
+})
+
+closePopupMobile?.addEventListener('click', (e) => {
+  popupBackgroundMobile.style.display = 'none';
+  // demonstrationMobile.style.display = 'none';
+  document.body.classList.remove('no-scroll-mob');
+  document.body.style.top = '0';
+  window.scrollTo(0, scrollPosition2);
+  demonstrationMobile.style.width = '0';
+    demonstrationMobile.style.height = '0';
+  const popupMob = document.querySelector('.popup-mobile-div');
+  popupMob?.remove();
+  e.preventDefault();
+})
