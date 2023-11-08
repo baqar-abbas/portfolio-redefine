@@ -1484,7 +1484,6 @@ nav li a#hamburger-menu {
     display: block;
     position: absolute;
     border-top-left-radius: 30px;
-    /* border-top-right-radius: 40px; */
     border-bottom-left-radius: 30px;
     top: 1%;
     z-index: 20;
