@@ -52,7 +52,7 @@ const projects = [
     name: 'Bookstore',
     description:
           'Bookstore is a Desktop webapp created using React and Redux (for State Management) which uses API as the backend. This webapp allows users to add and retrieve books from the API and also allows users to delete and add new books to the API. This webapp is a desktop app try accesing through desktop or laptop machine as this app is not configured to handle mobile responsiveness. In future this app will be configured to handle mobile responsiveness.',
-    featuredImage: './images/bookStore.JPG',
+    featuredImage: './images/bookstore.JPG',
     technologies: ['React', 'Redux', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://bookstoreactbaqar.netlify.app/',
     linkToSource: 'https://github.com/baqar-abbas/bookstore',
