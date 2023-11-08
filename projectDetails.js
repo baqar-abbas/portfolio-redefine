@@ -117,8 +117,6 @@ projects.forEach((project) => {
 
   cardInfo.innerHTML = `<h2 class="popheading popheaddesktop">${project.name}</h2>`;
 
-  // <p>${project.description}</p>
-
   const skillInfo = document.createElement('ul');
   skillInfo.classList.add('skillinfo');
   cardInfo.appendChild(skillInfo);
@@ -144,7 +142,6 @@ projects.forEach((project) => {
   const cardDescription = document.createElement('p');
   cardDescription.classList.add('popp15', 'popp15desktop');
   cardDescription.innerHTML = `<br>${project.description}<br><br>`;
-  // cardDescription.innerText = project.description;
   cardInfo.appendChild(cardDescription);
 
   const techList = document.createElement('ul');
@@ -164,11 +161,7 @@ projects.forEach((project) => {
 
   const seeProject = document.createElement('a');
   seeProject.classList.add('btnlink');
-  // seeProject.setAttribute('href', project.linkToLiveVersion);
-  // seeProject.href = 'javascript:void(0)';
   seeProject.href = '';
-  // seeProject.setAttribute('target', '_blank');
-  // seeProject.innerHTML = `<br>`;
   seeProject.innerText = 'See Project';
   btnDiv.appendChild(seeProject);
 
@@ -188,7 +181,6 @@ seeProjectBtn.forEach((btn, index) => {
     scrollPosition = window.scrollY;
     document.body.classList.add('no-scroll');
     document.body.style.top = `${-scrollPosition}px`;
-    // demonstrationDiv.style.display = 'block';
     demonstrationDiv.style.width = '79%';
     demonstrationDiv.style.height = '90vh';
 
@@ -265,7 +257,6 @@ seeProjectBtn.forEach((btn, index) => {
     seeProject.classList.add('btnlink', 'seeLiveBtn');
     seeProject.setAttribute('href', projects[index].linkToLiveVersion);
     seeProject.setAttribute('target', '_blank');
-    // seeProject.innerText = 'See Live';
     seeProject.appendChild(document.createTextNode(' See Live'));
     const seeLiveLogo = document.createElement('img');
     seeLiveLogo.classList.add('seeliveicon1');
@@ -284,7 +275,6 @@ seeProjectBtn.forEach((btn, index) => {
     githubLogo.src = '/images/gitbutton.png';
     githubLogo.alt = 'GitHub';
     seeSource.appendChild(githubLogo);
-    // seeSource.appendChild(document.createTextNode(' See Source'));
     btnDiv.appendChild(seeSource);
 
     event.preventDefault();
@@ -301,6 +291,5 @@ closeModal.addEventListener('click', (e) => {
   demonstrationDiv.style.height = '0';
   popupBackdroundDesktop.style.display = 'none';
   document.body.classList.remove('no-scroll');
-  // demonstrationDiv.style.display = 'none';
   e.preventDefault();
 });

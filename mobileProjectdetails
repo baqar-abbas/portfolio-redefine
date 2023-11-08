@@ -83,14 +83,6 @@ const projectsMob = [
       },   
 ]
 
-// const classNames = [
-//   'work-one',
-//   'work-two',
-//   'work-three',
-//   'work-four',
-//   'work-five',
-// ];
-
 const mobileDiv = document.querySelector('#portfolio2');
 
 projectsMob.forEach((project) => {
@@ -162,7 +154,6 @@ projectsMob.forEach((project) => {
 
     const liveVersion = document.createElement('a');
     liveVersion.classList.add('live-version');
-    // liveVersion.href = project.linkToLiveVersion;
     liveVersion.href = '';
     liveVersion.target = '_blank';
     liveVersion.textContent = 'See Project';
@@ -179,8 +170,6 @@ let scrollPosition2 = 0;
 seeProjectMobile.forEach((btn, index) => {
   btn.addEventListener('click', (e) => {
     popupBackgroundMobile.style.display = 'block';
-    // demonstrationMobile.style.display = 'block';
-    // console.log(index);
     scrollPosition2 = window.scrollY;
     document.body.classList.add('no-scroll-mob');
     document.body.style.top = `${-scrollPosition2}px`;
@@ -277,7 +266,6 @@ seeProjectMobile.forEach((btn, index) => {
 
 closePopupMobile?.addEventListener('click', (e) => {
   popupBackgroundMobile.style.display = 'none';
-  // demonstrationMobile.style.display = 'none';
   document.body.classList.remove('no-scroll-mob');
   document.body.style.top = '0';
   window.scrollTo(0, scrollPosition2);
