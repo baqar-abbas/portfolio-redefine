@@ -20,7 +20,7 @@ const projects = [
     name: 'Space Hub',
     description:
           'Space Traveler\'s Hub is a Desktop web app created using React and Redux which uses API as the back-end. This web app allows users to reserve rockets and join missions. Users can see the reserved rockets and missions joined details in the profile page.',
-    featuredImage: '/images/spaceHub.jpg',
+    featuredImage: './images/spaceHub.JPG',
     technologies: ['React', 'Redux', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://spacetravellerhubcapstone.netlify.app/',
     linkToSource: 'https://github.com/baqar-abbas/spacehub-capstone',
@@ -36,7 +36,7 @@ const projects = [
     name: 'Astronomy Picture',
     description:
           'Astronomy Picture of the Day uses APIs as backend to fetch images from base API (NASA API) and adds interactivity through involvement API to add likes, opening Popop Modal and add comments. User can add likes to the pcitures and user can open comment modal section and enter their comments in the comments section.',
-    featuredImage: '/images/astronomyPicture.jpg',
+    featuredImage: './images/astronomyPicture.JPG',
     technologies: ['HTML', 'API/Webpack', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://baqar-abbas.github.io/JavascriptCapstone/dist/',
     linkToSource: 'https://github.com/baqar-abbas/JavascriptCapstone',
@@ -52,7 +52,7 @@ const projects = [
     name: 'Bookstore',
     description:
           'Bookstore is a Desktop webapp created using React and Redux (for State Management) which uses API as the backend. This webapp allows users to add and retrieve books from the API and also allows users to delete and add new books to the API. This webapp is a desktop app try accesing through desktop or laptop machine as this app is not configured to handle mobile responsiveness. In future this app will be configured to handle mobile responsiveness.',
-    featuredImage: '/images/bookStore.jpg',
+    featuredImage: './images/bookStore.JPG',
     technologies: ['React', 'Redux', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://bookstoreactbaqar.netlify.app/',
     linkToSource: 'https://github.com/baqar-abbas/bookstore',
@@ -68,7 +68,7 @@ const projects = [
     name: 'Web Summit 2023',
     description:
           'This Project was built using HTML, CSS and JavaScript as a capstone Project. This Project was built as an individual Capstone Project. Both mobile and desktop versions of the website were created which handles different screen resolutions.',
-    featuredImage: '/images/webSummit.jpg',
+    featuredImage: './images/webSummit.JPG',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://baqar-abbas.github.io/Conference-site-Capstone-Project-Module1/',
     linkToSource: 'https://github.com/baqar-abbas/Conference-site-Capstone-Project-Module1',

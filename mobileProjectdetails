@@ -5,7 +5,7 @@ const projectsMob = [
       name: 'Appointment App',
       description:
         'Doctor Appointment app is a Full Stack Web application built using Ruby-on-Rails along with React and Redux for the front end. It allows users to signup and register themselves and sign-in using the credentials. It allows users to book an appointment with the doctor. Users can see their appointments in the my appointments page. This app also allows admins to add doctors and delete doctors. This app handles responsiveness for both the mobile and desktop users.',
-      featuredImage: '/images/appointAppMob.jpg',
+      featuredImage: './images/appointAppMob.JPG',
       technologies: ['RubyonRails', 'PostgreSQL', 'React', 'Redux', 'CSS', 'BootStrap'],
       linkToLiveVersion: 'https://doctor-app-u5x6.onrender.com/',
       linkToSource: 'https://github.com/baqar-abbas/appointment-app-back-end',
@@ -21,7 +21,7 @@ const projectsMob = [
         name: 'Population Metrics',
         description:
           'Population Metric Webb app is a mobile web app which is fetching images and data through Countries Rest API and displaying them on the UI. Users can click on available countries and can see the details on details page. Users can also search for specific country from the search bar which is implemented within the web app and then can see the details of that specific country on the details page.',
-        featuredImage: '/images/metrics.jpg',
+        featuredImage: './images/metrics.JPG',
         technologies: ['React', 'Redux', 'JavaScript',],
         linkToLiveVersion: 'https://population-metrics-webapp.netlify.app/',
         linkToSource: 'https://github.com/baqar-abbas/population-metrics-webapp',
@@ -37,7 +37,7 @@ const projectsMob = [
         name: 'Astronomy Picture',
         description:
           'Astronomy Picture of the Day uses APIs as backend to fetch images from base API (NASA API) and adds interactivity through involvement API to add likes, opening Popop Modal and add comments. User can add likes to the pcitures and user can open comment modal section and enter their comments in the comments section.',
-        featuredImage: '/images/astronomyPicture.jpg',
+        featuredImage: './images/astronomyPicture.JPG',
         technologies: ['HTML', 'API/Webpack', 'CSS', 'JavaScript',],
         linkToLiveVersion: 'https://baqar-abbas.github.io/JavascriptCapstone/dist/',
         linkToSource: 'https://github.com/baqar-abbas/JavascriptCapstone',
@@ -53,7 +53,7 @@ const projectsMob = [
         name: 'Bookstore',
         description:
           'Bookstore is a Desktop webapp created using React and Redux (for State Management) which uses API as the backend. This webapp allows users to add and retrieve books from the API and also allows users to delete and add new books to the API. This webapp is a desktop app try accesing through desktop or laptop machine as this app is not configured to handle mobile responsiveness. In future this app will be configured to handle mobile responsiveness.',
-        featuredImage: '/images/bookStore.jpg',
+        featuredImage: './images/bookStore.JPG',
         technologies: ['React', 'Redux', 'CSS', 'JavaScript',],
         linkToLiveVersion: 'https://bookstoreactbaqar.netlify.app/',
         linkToSource: 'https://github.com/baqar-abbas/bookstore',
@@ -69,7 +69,7 @@ const projectsMob = [
         name: 'Web Summit 2023',
         description:
           'This Project was built using HTML, CSS and JavaScript as a capstone Project. This Project was built as an individual Capstone Project. Both mobile and desktop versions of the website were created which handles different screen resolutions.',
-        featuredImage: '/images/webSummitMob.jpg',
+        featuredImage: './images/webSummitMob.JPG',
         technologies: ['HTML', 'CSS', 'JavaScript',],
         linkToLiveVersion: 'https://baqar-abbas.github.io/Conference-site-Capstone-Project-Module1/',
         linkToSource: 'https://github.com/baqar-abbas/Conference-site-Capstone-Project-Module1',
