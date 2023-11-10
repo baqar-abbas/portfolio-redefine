@@ -32,7 +32,7 @@
 
 # 📖 [BAQAR's PORTFOLIO] <a name="about-project"></a>
 
-> **[PORTFOLIO-APP]** This is a Mobile and desktop responsive web app. It allows you to go through some of my work and experience. This web app is built using HTML web app is built using HTML, CSS and JavaScript for the demonstration of work and experience.
+> **[PORTFOLIO-APP]** This is a Mobile and desktop responsive web app. It allows you to go through some of my work and experience. This web app is built using HTML, CSS and JavaScript for the demonstration of work and experience.
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
