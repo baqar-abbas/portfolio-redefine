@@ -3,7 +3,7 @@ const projectsMob = [
   {
     name: 'Appointment App',
     description:
-        'Doctor Appointment app is a Full Stack Web application built using Ruby-on-Rails along with React and Redux for the front end. It allows users to signup and register themselves and sign-in using the credentials. It allows users to book an appointment with the doctor. Users can see their appointments in the my appointments page. This app also allows admins to add doctors and delete doctors. This app handles responsiveness for both the mobile and desktop users.',
+        'Doctor Appointment app is a Full Stack Web application built using Ruby on Rails along with React and Redux for the front end. It allows users to sign up and register themselves, and sign in using their credentials. The app enables users to book appointments with doctors and view them on the \'My Appointments\' page. Additionally, administrators can add and delete doctors. The application ensures responsiveness for both mobile and desktop users.',
     featuredImage: './images/appointAppMob.JPG',
     technologies: ['RubyonRails', 'PostgreSQL', 'React', 'Redux', 'CSS', 'BootStrap'],
     linkToLiveVersion: 'https://doctor-app-u5x6.onrender.com/',
@@ -19,7 +19,7 @@ const projectsMob = [
   {
     name: 'Population Metrics',
     description:
-          'Population Metric Webb app is a mobile web app which is fetching images and data through Countries Rest API and displaying them on the UI. Users can click on available countries and can see the details on details page. Users can also search for specific country from the search bar which is implemented within the web app and then can see the details of that specific country on the details page.',
+          'Population Metric web app is a mobile web application that fetches images and data through the Countries Rest API, displaying them on the UI. Users can click on available countries to see details on the details page. Additionally, users can search for a specific country using the implemented search bar and view its details on the details page.',
     featuredImage: './images/metrics.JPG',
     technologies: ['React', 'Redux', 'JavaScript'],
     linkToLiveVersion: 'https://population-metrics-webapp.netlify.app/',
@@ -35,7 +35,7 @@ const projectsMob = [
   {
     name: 'Astronomy Picture',
     description:
-          'Astronomy Picture of the Day uses APIs as backend to fetch images from base API (NASA API) and adds interactivity through involvement API to add likes, opening Popop Modal and add comments. User can add likes to the pcitures and user can open comment modal section and enter their comments in the comments section.',
+          'Astronomy Picture of the Day uses APIs as a backend to fetch images from the base API (NASA API) and adds interactivity through the involvement API to include features such as liking, opening a popup modal, and adding comments. Users can like the pictures and open the comment modal section to enter their comments in the comments section.',
     featuredImage: './images/astronomyPicture.JPG',
     technologies: ['HTML', 'API/Webpack', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://baqar-abbas.github.io/JavascriptCapstone/dist/',
@@ -51,7 +51,7 @@ const projectsMob = [
   {
     name: 'Bookstore',
     description:
-          'Bookstore is a Desktop webapp created using React and Redux (for State Management) which uses API as the backend. This webapp allows users to add and retrieve books from the API and also allows users to delete and add new books to the API. This webapp is a desktop app try accesing through desktop or laptop machine as this app is not configured to handle mobile responsiveness. In future this app will be configured to handle mobile responsiveness.',
+          'Bookstore is a desktop web app created using React and Redux (for state management), which utilizes an API as the backend. This web app enables users to add and retrieve books from the API and also allows users to delete and add new books to the API. Please access this web app through a desktop or laptop machine, as it is not configured to handle mobile responsiveness at the moment. In the future, this app will be configured to support mobile responsiveness.',
     featuredImage: './images/bookstore.JPG',
     technologies: ['React', 'Redux', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://bookstoreactbaqar.netlify.app/',
@@ -67,7 +67,7 @@ const projectsMob = [
   {
     name: 'Web Summit 2023',
     description:
-          'This Project was built using HTML, CSS and JavaScript as a capstone Project. This Project was built as an individual Capstone Project. Both mobile and desktop versions of the website were created which handles different screen resolutions.',
+          'Web Summit 2023 was built using HTML, CSS, and JavaScript as a capstone project. This project was developed as an individual capstone project. Both mobile and desktop versions of the website were created, which handle different screen resolutions.',
     featuredImage: './images/webSummitMob.JPG',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     linkToLiveVersion: 'https://baqar-abbas.github.io/Conference-site-Capstone-Project-Module1/',
